@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  hello-world:
+    image: rossmaclean/hello-world:1
+    restart: unless-stopped
+    container_name: hello_world
+    ports:
+      - "80:80"
